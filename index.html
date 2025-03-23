@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공차</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/mediaqury.css">
+  <link rel="stylesheet" href="./css/popbox.css">
+  <link rel="stylesheet" href="./css/hambox.css">  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./script/slidbox.js" defer="defer"></script>
+  <script src="./script/popup script.js" defer="defer"></script>
+  <script src="./script/menu script.js" defer="defer"></script>  
+  <script src="./script/navbox.js" defer="defer"></script>
+  <script src="./script/hambox.js" defer="defer"></script>
+  <!-- Font Awesome CSS 링크 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="dark"></div>
+  <div class="pad">
+    <!-- 첫 번째 팝업 -->
+    <div class="popbox" id="popup-box1">
+      <div class="pop">
+        <figure>
+          <img src="./images/pop/1-1창업설명회.png" alt="공차창업설명회">
+        </figure>
+        <div class="checkbox">
+          <input type="checkbox" id="today1" name="today">
+          <label for="today1">오늘 하루 보지 않기</label>
+          <input type="button" id="close1" name="close">
+          <label for="close1"><i class="fa-regular fa-circle-xmark"></i>닫기</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- 두 번째 팝업 -->
+    <div class="popbox" id="popup-box2">
+      <div class="pop">
+        <figure>
+          <img src="./images/pop/2-2단체주문.png" alt="단체 및 기업주문 안내">
+        </figure>
+        <div class="checkbox">
+          <input type="checkbox" id="today2" name="today">
+          <label for="today2">오늘 하루 보지 않기</label>
+          <input type="button" id="close2" name="close">
+          <label for="close2"><i class="fa-regular fa-circle-xmark"></i>닫기</label>
+        </div>
+      </div>
+    </div>
+    <!-- 세 번째 팝업 -->
+    <div class="popbox" id="popup-box3">
+      <div class="pop">
+        <figure>
+          <img src="./images/pop/3-3.친절사원.png" alt="이달의 친절크루를 소개합니다.">
+        </figure>
+        <div class="checkbox">
+          <input type="checkbox" id="today3" name="today">
+          <label for="today3">오늘 하루 보지 않기</label>
+          <input type="button" id="close3" name="close">
+          <label for="close3"><i class="fa-regular fa-circle-xmark"></i>닫기</label>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- header -->
+    <header>
+      <div class="header_i">
+        <div class="logo">
+          <h1>
+            <a href="./index.html">
+              <img src="./images/common/logo.png" alt="공차logo">
+            </a>
+          </h1>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li class="gnb gnb1"><a href="#">Brand</a>
+              <ul class="submenu">
+                <li><a href="./BRAND STORY.html">브랜드소개</a></li>
+                <li><a href="#">공차의 약속</a></li>
+                <li><a href="#">브랜드 아이덴티티</a></li>
+                <li><a href="#">세계속의 공차</a></li>
+              </ul>
+            </li>
+
+            <li class="gnb gnb2"><a href="#">Menu</a>
+              <ul class="submenu">
+                <li><a href="#">주문방법</a></li>
+                <li><a href="#">신메뉴</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">디저트</a></li>
+                <li><a href="#">티스토리</a></li>
+                <li><a href="#">티레시피</a></li>
+              </ul>
+
+            </li>
+
+            <li class="gnb gnb3"><a href="#">Store</a>
+              <ul class="submenu">
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">가맹점 개설문의</a></li>
+              </ul>
+            </li>
+
+            <li class="gnb gnb4"><a href="#">Menbership</a>
+              <ul class="submenu">
+                <li><a href="#">공차 멤버십</a></li>
+                <li><a href="#">공차카드 & e-Gift</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+
+            </li>
+
+            <li class="gnb gnb5"><a href="#">Benefit</a>
+              <ul class="submenu">
+                <li><a href="#">통신사 제휴</a></li>
+                <li><a href="#">결제서비스</a></li>
+              </ul>
+            </li>
+
+            <li class="gnb gnb6"><a href="#">Event&News</a>
+              <ul class="submenu">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">공차소식</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="notice">
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#"><img src="./images/common/btn_f.png" alt="facebook link"></a></li>
+            <li><a href="#"><img src="./images/common/btn_i.png" alt="instagrem link"></a></li>
+            <li><a href="#"><img src="./images/common/btn_k.png" alt="kakao link"></a></li>
+          </ul>
+        </div>
+
+        <div class="Qick_btn">
+          <div class="Qick_bg">
+            <figure>
+              <img src="./images/common/go_main_franchise_bg.png" alt="">
+            </figure>
+          </div>
+          <div class="Qick_img">
+            <figure>
+              <img src="./images/common/go_main_franchise_ico.png" alt="가맹점개설문의">
+            </figure><!-- css : bg hover -->
+            <span>가맹점 <br>개설문의</span>
+          </div>
+        </div>
+        <div class="ham">
+          <button type="button">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+
+    <!-- ham_ham_allbox -->
+    <div id="hamallbox">
+      <div class="ham_i">
+        <div class="hamnotice">
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#"><img src="./mobile/icon/icon_f.png" alt="facebook link"></a></li>
+            <li><a href="#"><img src="./mobile/icon/icon_i.png" alt="instagrem link"></a></li>
+            <li><a href="#"><img src="./mobile/icon/icon_k.png" alt="kakao link"></a></li>
+          </ul>
+        </div>
+        <div class="hammenu">
+          <ul>
+            <li class="hamgnb gnb1"><a href="#">Brand</a>
+              <ul class="hamsubmenu">
+                <li><a href="./BRAND STORY.html">브랜드소개</a></li>
+                <li><a href="#">공차의 약속</a></li>
+                <li><a href="#">브랜드 아이덴티티</a></li>
+                <li><a href="#">세계속의 공차</a></li>
+              </ul>
+            </li>
+
+            <li class="hamgnb gnb2"><a href="#">Menu</a>
+              <ul class="hamsubmenu">
+                <li><a href="#">주문방법</a></li>
+                <li><a href="#">신메뉴</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">디저트</a></li>
+                <li><a href="#">티스토리</a></li>
+                <li><a href="#">티레시피</a></li>
+              </ul>
+
+            </li>
+
+            <li class="hamgnb gnb3"><a href="#">Store</a>
+              <ul class="hamsubmenu">
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">가맹점 개설문의</a></li>
+              </ul>
+            </li>
+
+            <li class="hamgnb gnb4"><a href="#">Menbership</a>
+              <ul class="hamsubmenu">
+                <li><a href="#">공차 멤버십</a></li>
+                <li><a href="#">공차카드 & e-Gift</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+
+            </li>
+
+            <li class="hamgnb gnb5"><a href="#">Benefit</a>
+              <ul class="hamsubmenu">
+                <li><a href="#">통신사 제휴</a></li>
+                <li><a href="#">결제서비스</a></li>
+              </ul>
+            </li>
+
+            <li class="hamgnb gnb6"><a href="#">Event&News</a>
+              <ul class="hamsubmenu">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">공차소식</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+        <div class="hamQick">
+          <figure>
+            <img src="./mobile/icon/go_main_franchise_ico.png" alt="점포&가게&매장 무늬 아이콘">
+          </figure>
+          <span>가맹점 개설문의</span>
+          <a href="#"><img src="./mobile/icon/main_quick_arr_brand.png" alt="가맹점개설문의"></a>
+        </div>
+      </div>
+    </div>
+    <!-- ham_ham_allbox -->
+
+
+    <!-- fixed box -->
+
+    <div class="fixed">
+
+      <div class="fixed_i">
+        <figure>
+          <a href="#">
+            <img class="off" src="./images/brand/quick_img_off.png" alt="가맹문의">
+          </a>
+        </figure>
+
+      </div>
+
+    </div>
+
+    <!-- fixed box -->
+
+
+    <!-- slide_banner -->
+
+    <div class="swiper mySwiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slideindex1">
+          <figure>
+            <img src="./images/slide/1.jpg" alt="베스트셀러" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex2">
+          <figure>
+            <img src="./images/slide/2.jpg" alt="마스카포네 딸기" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex3">
+          <figure>
+            <img src="./images/slide/3.jpg" alt="뷰티 드링크" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex4">
+          <figure>
+            <img src="./images/slide/4.jpg" alt="진저브레드맨 케이크 출시" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex5">
+          <figure>
+            <img src="./images/slide/5.jpg" alt="진저브레드맨" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex6">
+          <figure>
+            <img src="./images/slide/6.jpg" alt="버블티 키링" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex7">
+          <figure>
+            <img src="./images/slide/7.jpg" alt="굿모닝 공차" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex8">
+          <figure>
+            <img src="./images/slide/8.jpg" alt="KT 제휴혜택" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+        <div class="swiper-slide slideindex9">
+          <figure>
+            <img src="./images/slide/9.jpg" alt="이클립스 행사" style="width: 1920px; height: 850px;">
+          </figure>
+          <div class="slid_link">
+            <button type="button"><a href="#">자세히보기 &#8250;</a></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button">
+        <div class="swiper-btn">
+          <button class="button-prev" type="button"><img src="./images/common/prev.png" alt="이전으로 슬라이드"></button>
+          <button class="button-next" type="button"><img src="./images/common/next.png" alt="다음으로 슬라이드"></button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- slide_banner -->
+
+
+    <!-- section -->
+
+    <section>
+      <div class="section_i">
+
+        <div class="s1">
+          <figure>
+            <a href="#">
+              <img id="s1img" src="./images/brandmain/1-1.jpg" alt="공차 베스트셀러 메뉴">
+            </a>
+          </figure>          
+        </div>
+        <script>          
+          window.onload = () => {              
+              let s1Images = [
+                  './images/brandmain/1-1.jpg',
+                  './images/brandmain/1-2.jpg',
+                  './images/brandmain/1-3.jpg',
+              ];                
+
+              let randomIndex = Math.floor(Math.random() * s1Images.length);
+                
+              let img = document.getElementById('s1img');
+                            
+              img.setAttribute ('src',s1Images[randomIndex]);
+          };
+      </script>
+
+        <div class="s2">
+          <h2>매장검색</h2>
+          <h3>공차 매장을 쉽고 빠르게 <br class="br"> 찾아보세요.</h3>
+
+          <div class="s2_search">
+            <a href="#">
+              <input type="text" placeholder=" 매장명 또는 주소를 입력하세요">
+              <img src="./images/common/btn_main_store_search.gif" alt="검색버튼">
+            </a>
+            <button type="button"><a href="#">매장검색하기</a></button>
+          </div>
+
+        </div>
+
+        <div class="s3">
+          <div class="s3_img">
+            <figure>
+              <a href="#">
+                <img src="./images/brandmain/brand_main_section3_img.jpg" alt="어떻게 주문 도와 드릴까요? 공차의 토핑, 당도, 얼음량 조절">
+              </a>
+            </figure>
+          </div>
+
+          <div class="s3_text">
+            <h2>주문하기 (how to order) </h2>
+            <p>공차는 취향에 맞게 토핑, 당도, 얼음량까지 <br class="br"> 맞춤주문 가능합니다.</p>
+            <span><a href="#">자세히 보기 &#8250; </a></span>
+          </div>
+
+        </div>
+
+        <div class="s4">
+          <figure>
+            <a href="#">
+              <img src="./images/brandmain/delivery.jpg" alt="공차 배달 서비스">
+            </a>
+          </figure>
+        </div>
+      </div>
+
+      <div class="section_i2">
+        <div class="s5">
+          <h2>공차 가맹점 개설문의</h2>
+          <div class="s5_text1">
+            <h3>개설안내</h3>
+            <p>공차만의 프랜차이즈 운영 <br>
+              노하우로 안정된 창업을 이루세요.</p>
+          </div>
+          <div class="s5_text2">
+            <h3>FAQ</h3>
+            <p>가맹점 개설과 관련한 <br>
+              자주 묻는 질문입니다.
+            </p>
+          </div>
+          <button type="button"><a href="#">내용보기</a></button>
+        </div>
+
+        <div class="s6">
+          <div class="s6_img">
+            <figure>
+              <a href="#">
+                <img src="./images/brandmain/membership.png" alt="공차 멤버십 앱 회원전용 혜택">
+              </a>
+            </figure>
+          </div>
+          <div class="s6_text">
+            <h4>공차 멥버십 앱 안내</h4>
+            <span><a href="#">자세히 보기 &#8250;</a></span>
+          </div>
+        </div>
+
+        <div class="s7">
+          <div class="s7_img">
+            <figure>
+              <a href="#">
+                <img src="./images/brandmain/openstor.jpg" alt="공차 오픈 매장 안내">
+              </a>
+            </figure>
+          </div>
+          <div class="s7_text">
+            <h4>오픈 매장 안내</h4>
+            <span><a href="#">자세히 보기 &#8250;</a></span>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <!-- section -->
+    
+    
+    <!-- nav   -->
+    <nav>
+      <div class="nav_i">
+        
+        <div class="nav_title">
+          <h2>공차 티 레시피</h2>
+          <ul>
+            <li><a href="#" data-index="0">오리지널 티</a></li>
+            <li><a href="#" data-index="1">밀크티</a></li>
+            <li><a href="#" data-index="2">프룻티</a></li>
+          </ul>
+        </div>
+        
+        <div class="nav_box">
+          
+          <div class="nav_img">
+            <figure>
+              <img src="./images/brandmain/brand_main_recipe_img1.jpg" alt="오리지널 티 레시피" id="recipe-image">
+            </figure>
+          </div>
+          
+          <div class="nav_text">
+            <h2>TEA RECIPE - 티 레시피</h2>
+            <h4 id="recipe-title">오리지널 티 - Original Tea</h4>
+            <p id="recipe-description">티백이나 가루가 아닌 황실에 바치던 잎차만 골라 1도 1초도 어기지 않고
+              차마다 다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.
+            </p>
+            <button type="button"><a href="#">메뉴 보러가기 ></a></button>
+          </div>
+          
+        </div>
+        
+      </div>
+    </nav>
+    
+    <!-- nav   -->
+    
+    
+    <!-- footer   -->
+    
+    <footer>
+      <div class="footer_i">
+        <div class="footer_l">
+          <figure>
+            <img src="./images/common/ft_logo.png" alt="공차 logo">
+          </figure>
+          <span>&#40;c&#41;gongcha korea co.,ltd <br> all rights reserved.</span>
+        </div>
+        
+        <div class="footer_r">
+          <div class="footer_r1">
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">제휴/제안</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이메일무단수집거부</a></li>
+              <li><a href="#">윤리규범 실천지점</a></li>
+              <li><a href="#">hot-line</a></li>
+            </ul>
+          </div>
+          <div class="footer_r2">
+            <div class="fr2-1">
+              <h5>고객센터</h5>
+              <p><img src="./images/common/ico_tell.png" alt="수화기모양">02-779-7758</p>
+              <span>운영시간 : 월요일~목요일 &#40;오전 9시 ~ 오후 6시&#41;,금요일&#40;오전 9시 ~ 오후 1시&#41;</span>
+            </div>
+            <div class="fr2-2">
+              <h5>가맹문의</h5>
+              <p><img src="./images/common/ico_tell.png" alt="수화기모양">02-779-7758</p>
+              <span>점심시간 : 낮 12시~오후1시 / 주말 및 공휴일 휴무</span>
+            </div>
+          </div>
+          <div class="footer_r3">
+            <ul>
+              <li>서울 종로구 종로 47&#40;공평동, 7층&#41;</li>
+              <li>&#40;주&#41;공차코리아 대표이사 고희경</li>
+              <li>사업자 등록번호 214-88-84534 </li>
+              <li>통신판매번호 : 2020-서울종로-0966</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ps">
+          <p>이 페이지는 교육용으로 웹 퍼블리셔 과정 연습을 위하여 제작된 페이지 입니다.</p>
+        </div>
+      </div>
+    </footer>    
+    <!-- footer   -->
+  </div>
+
+</body>
+
+</html>

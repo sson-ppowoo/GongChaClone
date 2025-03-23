@@ -1,0 +1,152 @@
+#BRAND_STORY_ALL{  
+  width: 100%;
+  height: auto;
+  margin-top: 110px;     
+  overflow: hidden;     
+}
+#BRAND_STORY_ALL .BS_bgimg{
+  max-width: 100%;
+  height: 264px;
+  background-image: url(../brand_story/images/page_top_visual_brand.jpg);  
+  background-size: cover;  
+  background-position: center;      
+  overflow: hidden;
+}
+#BRAND_STORY_ALL .BS_bgimg .title{
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  color: #fff;
+  align-content: center;
+  position: relative;  
+}
+.title>h2{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40PX;
+}
+.title>p{  
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#BRAND_STORY_ALL .BS_bgimg .subTitle{  
+  width: 350px;
+  height: 36px;
+  position: absolute;
+  background-color: #983B43;
+  top: 354px; 
+  right: 16%;
+  display: flex; 
+  justify-content:flex-start;  
+  align-items: center;  
+  gap: 18px;
+  padding-left: 20px;
+  z-index: 1;
+}
+.subTitle>a{  
+  color: #FFAFBF; 
+  font-weight: 400;
+}
+.subTitle>span{
+  color: #fff;  
+  font-weight: 700;
+}
+#BRAND_STORY_ALL .mainTitle{
+  width: 100%;  
+  height: auto;
+  background-color: #E4DCD2;
+  text-align: center;
+  padding: 100px;  
+  display: flex;  
+  flex-direction: column;
+  gap: 2%;
+}
+.mainTitle>h3{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.mainTitle>p{
+  font-size: 1.2rem;  
+  color: #777;
+}
+.mainTitle>span{
+  font-size: 1.2rem;  
+  color: #983B43;
+}
+#BRAND_STORY_ALL .video{      
+  width: 100%;
+  height: 300px;    
+  position: relative;  
+  background-color: #E4DCD2;
+  object-fit : cover;
+}
+.video .mainVideo{     
+  position: absolute;
+  max-width: 100%;
+  height: auto;  
+  top: 92%;   
+  left: 50%;   
+  transform: translate(-50%,-50%);    
+}
+.video .videoShadow{    
+  max-width: 100%;
+  height: 600px;
+  margin: auto;
+  align-content: end;     
+}
+#BRAND_STORY_ALL .value_section{  
+  max-width: 1200px;        
+  height: auto;
+  margin: auto;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content:center;  
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;  
+}
+.value_section .value {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;    
+}
+
+.value_section figure img {
+  transform: rotate(0deg);
+  opacity: 0; 
+  transition: transform 0.05s ease-out, opacity 0.05s ease; 
+}
+.value_section figure img.visible {
+  opacity: 1;
+}
+
+.value_section .value_text { 
+  display: flex;    
+  flex-direction: column;
+  gap: 20px;
+}
+.value_section .value h4{
+  font-size: 2rem;
+  font-weight: 400;
+  color: #983B43;
+}
+.value_section .value p{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.value_section .value span{
+  font-size: 1rem;
+  font-weight: 400;
+}
+#BRAND_STORY_ALL .slogan{  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}

@@ -1,0 +1,101 @@
+@media (max-width: 1200px) {
+  #BRAND_STORY_ALL{
+    width: 100%;
+    height: 100%;            
+  }
+  #BRAND_STORY_ALL .BS_bgimg{
+    height: 50vh;
+    background-position-x: 65%;
+  }
+  #BRAND_STORY_ALL .BS_bgimg .title{
+    width: 100%;
+    height: 100%;
+    background-color: #33333369;
+    text-align: center;
+  }
+  .title>h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40PX;
+  }
+  .title>p{  
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  #BRAND_STORY_ALL .BS_bgimg .subTitle{
+    display: none;
+  }
+  #BRAND_STORY_ALL .maintitle{
+    width: 100%;
+    height: 100%;    
+    margin: auto;    
+  }
+  .mainTitle>h3{
+    font-size: 2.5rem;    
+  }
+  .mainTitle>p{
+    font-size: 2rem;      
+  }
+  .mainTitle>span{
+    font-size: 2rem;      
+  }
+  .mainVideo iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .video .videoShadow>img{
+    display: none;
+  }  
+  #BRAND_STORY_ALL .value_section{    
+    width: 100%;    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;        
+  } 
+  .value_section .value{    
+    width: 100%;
+    height: 30vh;
+    border: none;    
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    flex-direction: row;       
+    gap: 100px;    
+  }
+  .value_section .value>figure{    
+    max-width: 100%;    
+    height: 100%;
+    flex: 0.5;                  
+    align-content: center;    
+  }
+  .value_section .value>figure>img{                 
+    border-radius: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(50%,-10%);
+  }
+  .value_text {
+    flex: 1.5;
+    padding: 0 50px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;     
+  }
+  .value_section .value h4{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #983B43;
+  }
+  .value_section .value p{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #666;
+  }
+  .value_section .value span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666;
+  }
+}
