@@ -19,6 +19,15 @@ function hamMenu() {
     }
 
   });
+   
+   window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1200) {
+      hamBox.style.display = "none";
+      dark.style.display = "none";
+      btn.classList.remove("open");
+    }
+  });
+
 }
 //함수호출
 hamMenu();
